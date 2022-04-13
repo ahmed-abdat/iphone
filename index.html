@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +9,15 @@
     <link rel="icon" href="./img/logo.png">
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet"> 
+
+<!-- cdn font awsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <!-- container -->
@@ -16,22 +25,45 @@
       <header>
         <a href="#" class="logo"><img src="./img/logo.png" alt="" /></a>
 
+        <!-- toggle --> 
+
+        <div class="nav">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three" ></span>
+        </div>
+
+
         <!-- nav bar -->
-        <ul>
-          <li><a href="#" class="btn">Home</a></li>
-          <li><a href="#" class="btn">Proudacte</a></li>
-          <li><a href="#" class="btn">About</a></li>
+        <ul class="menu">
+          <li><a href="#" class="btn nav-btn">الرئيسية</a></li>
+          <li><a href="#" class="btn nav-btn">منتجاتنا</a></li>
+          <li><a href="#" class="btn nav-btn">من نحن</a></li>
+          <div class="bar"> أو </div>
+          <div class="sign">
+            <div class="go">
+              <h3>سجل بإستخدام <span class="gg">G</span><span class="o">o</span><span class="oo">o</span><span class="gg">g</span><span class="l">l</span><span class="e">e</span></h3>
+            <!-- <i class="fa-brands fa-google"></i> -->
+            <img class="lg" src="./img/google.svg" alt="">
+            </div>
+
+            <div class="fac">
+              <h3>سجل بإستخدام <span>Facebook</span></h3>
+              <!-- <i class="fa-brands fa-facebook"></i> -->
+              <img src="./img/facebook.svg" alt="">
+            </div>
+          </div>
         </ul>
       </header>
 
       <div class="content">
         <div class="text">
-          <h2>Iphone 13 pro max</h2>
+          <h2> أيفون 13 برو ماكس</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-            suscipit harum tempora ab et quasi est, iste modi molestiae dolorem.
+           أحصل على أيفون 13 برو ماكس الآن  
+          وبأسعار مناسبة للجميع , لاتفوت الفرصة.
           </p>
-          <a href="#" class="btn btn-sec">All our Proudacte</a>
+          <a href="#" class="btn btn-sec"> جميع منتجاتنا  </a>
         </div>
         <div class="image">
           <img class="images" src="./img/0.png" alt="iphone" />
