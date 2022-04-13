@@ -1,134 +1,130 @@
-
 /* Start Global Rules */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  
- 
-  
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Smole */
-  
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 
+.container {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Smole */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
-  
-  /* Mediume */
-  
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+}
+
+/* Mediume */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
-  
-  /* Large */
-  
-  @media (min-width: 1200) {
-    .container {
-      width: 1170px;
-    }
+}
+
+/* Large */
+
+@media (min-width: 1200) {
+  .container {
+    width: 1170px;
   }
-  
-  /* End Global Rules */
+}
+
+/* End Global Rules */
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    background-color: #000;
-    font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  font-family: "Work Sans", sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
 }
 
 .logo img {
-    width: 40px;
+  width: 40px;
 }
 
 ul li {
-   display: inline-block;
+  display: inline-block;
 }
 
 ul li a {
-    text-decoration: none;
-    color: #fff;
-   margin-left: 2.1rem;
-   transition: .5s;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 2.1rem;
+  transition: 0.5s;
 }
 
 ul li a:hover {
-   background-color: #fff;
-   color: #000;
+  background-color: #fff;
+  color: #000;
 }
 @media (min-width: 500px) {
-    ul li a {
-        margin-right: .7rem;
-    }
+  ul li a {
+    margin-right: 0.7rem;
+  }
 }
 
 /* content */
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    margin-top: 2rem;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .text {
-    color: #fff;
-    width: 40%;
+  color: #fff;
+  width: 40%;
 }
 
 .text h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .text p {
-    font-size: 18px;
-    margin: 20px 0;;
+  font-size: 18px;
+  margin: 20px 0;
 }
 
 .btn {
-    text-decoration: none;
-    color: fff;
-    padding: 8px 15px;
-    border-radius: 40px;
-    transition: .5s;
+  text-decoration: none;
+  color: fff;
+  padding: 8px 15px;
+  border-radius: 40px;
+  transition: 0.5s;
 }
 
 .btn-sec {
-    border: 1px solid #fff;
-    /* background-color: #fff; */
-    color: #fff;
-    transition: 0,5s;
+  border: 1px solid #fff;
+  /* background-color: #fff; */
+  color: #fff;
+  transition: 0, 5s;
 }
 
 .btn-sec:hover {
@@ -137,26 +133,26 @@ ul li a:hover {
 }
 
 .image {
-    width: 30%;
+  width: 30%;
 }
 .image img {
-    width: 180px;
+  width: 180px;
 }
 
 .icons {
-    position: relative;
-    text-align: center;
-    margin-top: 2rem;
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .icons img {
-    width: 40px;
-    transition: transform 0.5s;
-    cursor: pointer;
+  width: 40px;
+  transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .icons img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media (max-width: 500px) {
@@ -165,7 +161,8 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
   }
-  .text ,.image {
+  .text,
+  .image {
     width: 60%;
     text-align: center;
   }
@@ -175,20 +172,17 @@ ul li a:hover {
   }
 
   .btn {
-    margin-left: .2rem;
+    margin-left: 0.2rem;
   }
 }
-
 
 @media (max-width: 300px) {
-
-  .text ,.image {
+  .text,
+  .image {
     width: 80%;
   }
- .btn {
-   margin: 0;
-   padding: 5px 8px;
- }
-
+  .btn {
+    margin: 0;
+    padding: 5px 8px;
+  }
 }
-
