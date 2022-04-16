@@ -7,6 +7,10 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+:root {
+  --nav-clr: #000;
+  --bg-nav-clr: #fff;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -50,6 +54,7 @@ body {
   width: 100%;
   background-color: #000;
   font-family: "Tajawal", sans-serif;
+  overflow: hidden;
 }
 
 header {
@@ -71,7 +76,7 @@ ul {
   align-items: center;
 }
 
-@media (min-width:867px) {
+@media (min-width: 867px) {
   .nav-btn {
     margin-left: 0.9rem;
     font-size: 1rem;
@@ -80,15 +85,16 @@ ul {
     color: #fff;
     transition: 0.5s;
   }
+  .nav-btn:hover {
+    background-color: #fff;
+    color: #000;
+  }
 }
-
-
 
 ul li a:hover {
   background-color: #fff;
   color: #000;
 }
-
 /* end header */
 
 /* nav bar */
@@ -126,7 +132,7 @@ ul li a:hover {
 
 .go,
 .fac {
-  background-color: #fff;
+  background-color: var(--bg-nav-clr);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,7 +211,7 @@ ul li a:hover {
 
 .btn {
   text-decoration: none;
-  color: fff;
+  color: #fff;
   padding: 8px 15px;
   border-radius: 40px;
   transition: 0.5s;
@@ -288,7 +294,6 @@ ul li a:hover {
     align-items: center;
     text-align: center;
   }
-  
 }
 
 /* min width : 301 px */
@@ -327,7 +332,7 @@ ul li a:hover {
   position: absolute;
   width: 25px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--bg-nav-clr);
   border-radius: 4px;
   transition: 0.5s;
 }
@@ -362,7 +367,6 @@ ul li a:hover {
 
 /* max-width of 991px */
 
-
 @media (max-width: 991px) {
   .nav {
     display: inline-flex;
@@ -371,9 +375,10 @@ ul li a:hover {
     height: 30px;
   }
 
- .text p , .text h2 {
-   text-align: center;
- }
+  .text p,
+  .text h2 {
+    text-align: center;
+  }
   .three,
   .one {
     left: 5px;
@@ -394,23 +399,49 @@ ul li a:hover {
   .menu {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     /* min-height: 100vh; */
-    background-color: #444;
+    background-color: var(--bg-nav-clr);
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
     justify-content: space-around;
     z-index: 30;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: 1s;
-    height: 128vh;
+    height: 100vh;
+  }
+  .nav {
+    width: 35px;
+    height: 30px;
+  }
+  .nav span {
+    width: 30px;
+  }
+  .nav span:nth-child(1) {
+    width: 25px;
+  }
+  .nav span:nth-child(2) {
+    width: 25px;
+  }
+
+  .nav span:nth-child(3) {
+    width: 25px;
   }
   .nav-btn {
-    color: #fff;
     font-size: 1.4rem;
+    color: #000;
+    transition: 0, 6s;
+  }
+  .nav-btn:hover {
+    color: var(--bg-nav-clr);
+    background-color: var(--nav-clr);
+    text-align: center;
+  }
+  .active.nav span {
+    background-color: var(--nav-clr);
   }
 
   .logo,
@@ -455,6 +486,29 @@ ul li a:hover {
   }
   .nav-btn {
     font-size: 1.4rem;
+    color: #000;
+    transition: 0.8s;
+    display: inline-block;
   }
-  
+  .nav-btn:hover {
+    border-bottom: 2px solid #444;
+  }
+  .nav-btn:hover {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-6px);
+  }
+  .active.nav span {
+    background-color: var(--nav-clr);
+  }
+}
+
+@media (min-width: 1010px) {
+  .btn-sec {
+    font-size: 1.2rem;
+  }
+  .nav-btn {
+    margin-left: 2rem;
+  }
 }
