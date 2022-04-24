@@ -49,7 +49,7 @@ html {
 /* End Global Rules */
 
 /* header */
-.container {
+body {
   min-height: 100vh;
   width: 100%;
   background-color: #000;
@@ -282,7 +282,7 @@ ul li a:hover {
 
 /* max widht of 300px */
 
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
   .text,
   .image {
     width: 80%;
@@ -294,7 +294,7 @@ ul li a:hover {
     align-items: center;
     text-align: center;
   }
-}
+} */
 
 /* min width : 301 px */
 @media (min-width: 301px) {
@@ -344,12 +344,12 @@ ul li a:hover {
 }
 
 .active span:nth-child(1) {
-  transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(-45deg);
   transition-delay: 0.125s;
 }
 
 .active span:nth-child(3) {
-  transform: translateX(-60px);
+  transform: translateX(60px);
   width: 25px;
 }
 
@@ -360,7 +360,7 @@ ul li a:hover {
 }
 
 .active span:nth-child(2) {
-  transform: translateY(0) rotate(315deg);
+  transform: translateY(0) rotate(-315deg);
   width: 25px;
   transition-delay: 0.25s;
 }
@@ -403,7 +403,6 @@ ul li a:hover {
     top: 0;
     right: 0;
     width: 100%;
-    /* min-height: 100vh; */
     background-color: var(--bg-nav-clr);
     display: flex;
     align-items: center;
@@ -411,7 +410,7 @@ ul li a:hover {
     padding: 2rem;
     justify-content: space-around;
     z-index: 30;
-    transform: translateX(-150%);
+    transform: translateX(100%);
     transition: 1s;
     min-height: 100vh;
   }
@@ -520,7 +519,3 @@ ul li a:hover {
   
 }
 
-body {
-  overflow: hidden;
-  height: 100vh;
-}
