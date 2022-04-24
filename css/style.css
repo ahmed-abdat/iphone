@@ -408,13 +408,12 @@ ul li a:hover {
     align-items: center;
     flex-direction: column;
     padding: 2rem;
-    justify-content: space-around;
+    justify-content: center;
     z-index: 30;
     transform: translateX(100%);
     transition: 1s;
     min-height: 100vh;
   }
- 
   .nav {
     width: 35px;
     height: 30px;
@@ -503,6 +502,9 @@ ul li a:hover {
   }
   .active.nav span {
     background-color: var(--nav-clr);
+  }
+  .sign {
+    margin-top: auto;
   }
 }
 
