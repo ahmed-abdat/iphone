@@ -380,6 +380,7 @@ ul li a:hover {
     transition: 0.8s;
     display: inline-block;
     margin-bottom: 1.8rem;
+    padding: 10px 28px;
   }
   .nav-btn:first-child {
     margin-top: 0.8rem;
@@ -393,7 +394,6 @@ ul li a:hover {
   }
   .sign {
     margin-top: auto;
-    margin-bottom: -1rem;
   }
 
   .text p,
@@ -503,6 +503,7 @@ ul li a:hover {
     transition: 0.8s;
     display: inline-block;
     margin-bottom: 1.8rem;
+    padding: 10px 28px;
   }
   .nav-btn:first-child {
     margin-top: 0.8rem;
@@ -514,12 +515,12 @@ ul li a:hover {
     text-align: center;
     transform: translateY(-6px);
   }
-  .active.nav span {
-    background-color: var(--nav-clr);
-  }
   .sign {
     margin-top: auto;
-    margin-bottom: -1rem;
+  }
+
+  .active.nav span {
+    background-color: var(--nav-clr);
   }
 }
 
