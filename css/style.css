@@ -128,6 +128,7 @@ ul li a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: auto;
 }
 
 .go,
@@ -395,6 +396,7 @@ ul li a:hover {
   }
   .sign {
     margin-top: auto;
+    margin-bottom: 1rem;
   }
 
   .text p,
@@ -518,6 +520,7 @@ ul li a:hover {
   }
   .sign {
     margin-top: auto;
+    margin-bottom: 1rem;
   }
 
   .active.nav span {
