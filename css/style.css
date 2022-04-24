@@ -490,7 +490,10 @@ ul li a:hover {
     color: #000;
     transition: 0.8s;
     display: inline-block;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.6rem;
+  }
+  .nav-btn:first-child {
+    margin-top: 0.8rem;
   }
   .nav-btn:hover {
     border-bottom: 2px solid #444;
