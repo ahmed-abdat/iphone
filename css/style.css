@@ -490,6 +490,7 @@ ul li a:hover {
     color: #000;
     transition: 0.8s;
     display: inline-block;
+    margin-bottom: 1.4rem;
   }
   .nav-btn:hover {
     border-bottom: 2px solid #444;
@@ -505,6 +506,7 @@ ul li a:hover {
   }
   .sign {
     margin-top: auto;
+    margin-bottom: -1rem;
   }
 }
 
