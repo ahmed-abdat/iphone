@@ -256,7 +256,7 @@ ul li a:hover {
 /* media content */
 
 /* min-width of 500px */
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 990px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -281,21 +281,7 @@ ul li a:hover {
   }
 }
 
-/* max widht of 300px */
 
-/* @media (max-width: 350px) {
-  .text,
-  .image {
-    width: 80%;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-} */
 
 /* min width : 301 px */
 @media (min-width: 301px) {
@@ -396,7 +382,7 @@ ul li a:hover {
   }
   .sign {
     margin-top: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .text p,
@@ -520,7 +506,7 @@ ul li a:hover {
   }
   .sign {
     margin-top: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .active.nav span {
