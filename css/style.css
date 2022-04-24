@@ -64,9 +64,11 @@ header {
   height: 50px;
 }
 
-.logo img {
-  width: 35px;
+.logo i {
+  font-size: 2rem;
+  color: #fff;
   order: 1;
+  transition: 0.8s;
 }
 
 ul {
@@ -214,7 +216,6 @@ ul li a:hover {
   text-decoration: none;
   color: #fff;
   padding: 8px 15px;
-  border-radius: 40px;
   transition: 0.5s;
 }
 
@@ -262,6 +263,10 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .open i {
+    color: #000;
+    transition: 0.5s 0.2s ease-in-out;
   }
   .text,
   .image {
@@ -358,6 +363,8 @@ ul li a:hover {
   transition-delay: 0.25s;
 }
 
+
+
 /* max-width of 991px */
 
 @media (max-width: 991px) {
@@ -374,15 +381,12 @@ ul li a:hover {
     display: inline-block;
     margin-bottom: 1rem;
     padding: .5rem 5.5rem;
+    border-bottom: 1px solid #ddd;
   }
-
-  .nav-btn:first-child {
-    margin-top: 0.8rem;
-  }
+ 
+ 
 
   .nav-btn:hover {
-    background-color: #000;
-    color: #fff;
     text-align: center;
     transform: translateY(-6px);
   }
@@ -418,7 +422,7 @@ ul li a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 70%;
     background-color: var(--bg-nav-clr);
     display: flex;
     align-items: center;
@@ -449,20 +453,23 @@ ul li a:hover {
   }
 
   .active.nav span {
-    background-color: var(--nav-clr);
+    background-color: #fff;
   }
 
   .logo,
   .nav {
     z-index: 300;
   }
+
   .open .menu {
     transform: translateX(0);
+    padding-top: 4rem;
   }
   .btn-sec {
     margin-left: 0.2rem;
     font-size: 1.2rem;
     padding: 0.5rem 2rem;
+    border-radius: 40px;
   }
   .go,
   .fac {
@@ -493,36 +500,49 @@ ul li a:hover {
     width: 25px;
   }
   .nav-btn {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #000;
     transition: 0.8s;
     display: inline-block;
     margin-bottom: 1rem;
-    padding: .5rem 5.5rem;
+    padding: .5rem 3em;
   }
-  .nav-btn:first-child {
-    margin-top: 0.8rem;
+  .nav-btn:last-child {
+  border: none;
+  }
+
+  .go , .fac {
+    padding: 0em .5em;
+  }
+
+  .menu {
+    width: 80%;
   }
 
   .nav-btn:hover {
-    background-color: #000;
-    color: #fff;
     text-align: center;
     transform: translateY(-6px);
   }
   .sign {
-    margin-top: auto;
+    /* margin-top: auto; */
     margin-bottom: 4rem;
   }
 
   .active.nav span {
-    background-color: var(--nav-clr);
+    background-color: #fff;
   }
   .icons {
     margin-top: 1rem;
   }
   .icons img {
     width: 45px;
+  }
+  .logo i {
+    font-size: 2rem;
+color: #fff;
+  }
+  .open i {
+    color: #000;
   }
 }
 
