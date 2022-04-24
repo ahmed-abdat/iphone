@@ -374,6 +374,27 @@ ul li a:hover {
     width: 35px;
     height: 30px;
   }
+  .nav-btn {
+    font-size: 1.4rem;
+    color: #000;
+    transition: 0.8s;
+    display: inline-block;
+    margin-bottom: 1.8rem;
+  }
+  .nav-btn:first-child {
+    margin-top: 0.8rem;
+  }
+
+  .nav-btn:hover {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-6px);
+  }
+  .sign {
+    margin-top: auto;
+    margin-bottom: -1rem;
+  }
 
   .text p,
   .text h2 {
@@ -431,21 +452,7 @@ ul li a:hover {
   .nav span:nth-child(3) {
     width: 25px;
   }
-  .nav-btn:hover {
-    color: var(--bg-nav-clr);
-    background-color: var(--nav-clr);
-    text-align: center;
-  }
-  .nav-btn {
-    font-size: 1.4rem;
-    color: #000;
-    transition: 0.8s;
-    display: inline-block;
-    margin-bottom: 1.6rem;
-  }
-  .nav-btn:first-child {
-    margin-top: 0.8rem;
-  }
+
   .active.nav span {
     background-color: var(--nav-clr);
   }
