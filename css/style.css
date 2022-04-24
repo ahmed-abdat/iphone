@@ -431,15 +431,20 @@ ul li a:hover {
   .nav span:nth-child(3) {
     width: 25px;
   }
-  .nav-btn {
-    font-size: 1.4rem;
-    color: #000;
-    transition: 0, 6s;
-  }
   .nav-btn:hover {
     color: var(--bg-nav-clr);
     background-color: var(--nav-clr);
     text-align: center;
+  }
+  .nav-btn {
+    font-size: 1.4rem;
+    color: #000;
+    transition: 0.8s;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+  }
+  .nav-btn:first-child {
+    margin-top: 0.8rem;
   }
   .active.nav span {
     background-color: var(--nav-clr);
@@ -490,14 +495,12 @@ ul li a:hover {
     color: #000;
     transition: 0.8s;
     display: inline-block;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.8rem;
   }
   .nav-btn:first-child {
     margin-top: 0.8rem;
   }
-  .nav-btn:hover {
-    border-bottom: 2px solid #444;
-  }
+
   .nav-btn:hover {
     background-color: #000;
     color: #fff;
